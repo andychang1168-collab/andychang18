@@ -1,39 +1,68 @@
-body {
-  background-color: #eee;
-  font-family: "Times New Roman", serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW17</title>
 
-.container {
-  background-color: #ddd;
-  width: 80%;
-  margin: 50px auto;
-  padding: 40px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
+    <style>
+        body{
+            margin:0;
+            background:#f2f2f2;
+            font-family:"Times New Roman", serif;
+        }
 
-/* 🔥 h1 陰影 */
-h1 {
-  font-size: 40px;
-  font-weight: bold;
-  border-top: 5px solid black;
-  display: inline-block;
+        .container{
+            width:900px;
+            margin:60px auto;
+            background:white;
+            padding:18px 22px 20px 22px;
+            box-shadow:0 4px 14px rgba(0,0,0,0.25);
+        }
 
-  /* 關鍵：文字陰影 */
-  text-shadow: 3px 3px 0px red;
-}
+        /* 第一行（上方線 + 粉色陰影） */
+        .heading1{
+            font-size:64px;
+            font-weight:700;
+            margin-bottom:34px;
 
-/* h2 樣式 */
-h2 {
-  font-size: 28px;
-  font-style: italic;
-  border: 4px solid yellowgreen;
-  padding: 10px;
-  margin-top: 30px;
-}
+            text-decoration: overline;
+            text-decoration-thickness:5px;
 
-/* h3 靠右 + 底線 */
-h3 {
-  text-align: right;
-  text-decoration: underline;
-  margin-top: 40px;
-}
+            text-shadow:2px 2px 0 #d8b6c8;
+        }
+
+        /* 第二行（黑框 + 黃色外框）🔥 */
+        .heading2{
+            font-size:56px;
+            font-weight:700;
+            font-style:italic;
+
+            border:2px solid black;        /* 內框 */
+            outline:4px solid #c9c300;     /* 外框（黃色） */
+
+            padding:6px 10px;
+            margin-bottom:34px;
+        }
+
+        /* 第三行（右下 + 底線） */
+        .heading3{
+            font-size:34px;
+            font-weight:700;
+            font-style:italic;
+
+            text-align:right;
+
+            text-decoration: underline;
+            text-decoration-thickness:3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading1">This is heading 1</div>
+        <div class="heading2">This is heading 2</div>
+        <div class="heading3">This is heading 3</div>
+    </div>
+</body>
+</html>
